@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Restaurant (Debug)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "program": "lib/main_restaurant.dart",
+      "args": ["--flavor", "resDev", "--target", "lib/main_restaurant.dart"]
+    },
+    {
+      "name": "Store (Debug)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "program": "lib/main_store.dart",
+      "args": ["--flavor", "storeDev", "--target", "lib/main_store.dart"]
+    }
+  ]
+}
