@@ -16,6 +16,22 @@
       "flutterMode": "debug",
       "program": "lib/main_store.dart",
       "args": ["--flavor", "storeDev", "--target", "lib/main_store.dart"]
+    },
+    {
+      "name": "Restaurant (Prod)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "program": "lib/main_restaurant.dart",
+      "args": ["--flavor", "resProd", "--target", "lib/main_restaurant.dart"]
+    },
+    {
+      "name": "Store (Prod)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "program": "lib/main_store.dart",
+      "args": ["--flavor", "storeProd", "--target", "lib/main_store.dart"]
     }
   ]
 }

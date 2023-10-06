@@ -1,9 +1,11 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_flavors_practice/flavors_config.dart';
 import 'package:flutter_flavors_practice/main_common.dart';
 
 void main() {
   mainCommon(FlavorsConfig(
+      isInReleaseVersion: kReleaseMode,
       appTitle: "Store App",
       apiEndpoints: {
         Endpoints.items: "api.dev.com/items",

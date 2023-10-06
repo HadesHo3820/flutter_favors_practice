@@ -69,6 +69,18 @@ android {
             versionCode 1
             versionName "1.0"
         }
+        resProd{
+            dimension "app"
+            applicationId "com.example.flutter_flavors_practice.resProd"
+            versionCode 1
+            versionName "1.0"
+        }
+        storeProd{
+            dimension "app"
+            applicationId "com.example.flutter_flavors_practice.storeProd"
+            versionCode 1
+            versionName "1.0"
+        }
     }
 
     buildTypes {

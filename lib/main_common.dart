@@ -19,19 +19,24 @@ class MyApp extends ConsumerWidget {
     return MaterialApp(
       title: config.appTitle,
       theme: config.theme,
-      home: const MyHomePage(),
+      home: MyHomePage(
+        isInReleaseVersion: config.isInReleaseVersion,
+      ),
     );
   }
 }
 
 class MyHomePage extends ConsumerWidget {
-  const MyHomePage({super.key});
+  final bool isInReleaseVersion;
+  const MyHomePage({super.key, required this.isInReleaseVersion});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final config = ref.read(buildConfigProvider);
     return Scaffold(
-      appBar: AppBar(title: Text(config.appTitle)),
+      appBar: AppBar(
+          title: Text(
+              "${config.appTitle} ${(isInReleaseVersion) ? "Release" : "Debug"}")),
       body: Image.asset(
         config.imageLocation,
         fit: BoxFit.fill,
