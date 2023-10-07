@@ -23,6 +23,7 @@ In Android, Flavors configuration is mainly conducted in folder **your_project/a
 #### Step 1: Define flavorDimensions and productFlavors
 
 Go to **android/app/build.gradle** file, find the **android {}** section. Inside this section, you define **flavorDimensions** and **productFlavors** like the following:
+
 ![Alt text](assets/images_for_git/image1.png)
 
 In this example, I define only one **flavorDimensions "app"**. In real-life situation, you can define multiple values of **flavorDimensions** up to your purpose.
@@ -117,3 +118,15 @@ Make sure that your application icons are added to the **Assets.xcassets** like 
 Let’s head over back to Asset Catalog Compiler and change the path to a suitable app icon path for each scheme.
 
 ![Alt text](assets/images_for_git/image14.png)
+
+### Set up build configuration in VSCode
+
+Go to **.vscode/launch.json** file, if it doesn't exist, create one. In **.vscode/launch.json** file, you need to define configurations for running the project in a specific version.
+
+![Alt text](assets/images_for_git/image15.png)
+
+### Final Result
+
+Run project with each environment. Finally, you will have 4 apps using 1 code base.
+
+![Alt text](assets/images_for_git/image16.png)
